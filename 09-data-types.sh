@@ -7,13 +7,17 @@ NUMBER1=100
 NUMBER2=200
 NAME=DevOps
 
-SUM=$(($NUMBER1+$NUMBER2+$NAME))
+SUM=$(($NUMBER1+$NUMBER2))
+
+
 
 echo "SUM is: ${SUM}"
+
+echo "Total cost of $NAME is ${SUM}"
 
 # Size = 4, Max index = 3
 LEADERS=("Modi" "Putin" "Trudo" "Trump")
 
-echo "All leaders: ${LEADERS[@]}"
-echo "First Leader: ${LEADERS[0]}"
-echo "First Leader: ${LEADERS[10]}"
+#echo "All leaders: ${LEADERS[@]}"
+echo "First Leader: ${LEADERS[3]}"
+#echo "First Leader: ${LEADERS[10]}"
