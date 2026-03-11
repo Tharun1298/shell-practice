@@ -3,4 +3,4 @@
 DATE=$(date)
 
 
-echo "timestamp is $DATE
+echo "timestamp is $DATE"
