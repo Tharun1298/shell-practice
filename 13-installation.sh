@@ -3,10 +3,9 @@
 
 USERID=$(id -u)
 
-if [ $USERID -ne 0]; then
+if [ $USERID -ne 0 ]; then
 
     echo "run with sudo user"
-
     exit 1
 
 fi
