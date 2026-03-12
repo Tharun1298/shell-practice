@@ -8,3 +8,15 @@ if [ $USERID -ne 0 ]; then
     echo "ERROR: Please run with user who are having root privileges"
 
 fi
+
+dnf install mysql -y
+
+if [ $? eq 0 ]; then
+
+    echo "Installation is successfull"
+
+else 
+
+    echo "Installation is unsusccesfull"
+
+fi
