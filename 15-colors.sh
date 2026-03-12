@@ -10,7 +10,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]; then
 
-    echo "run with sudo user"
+    echo -e "$R run with sudo user $N"
     exit 1
 
 fi
@@ -36,7 +36,7 @@ if [ $? -ne 0 ]; then
     dnf install mysql -y
     VALIDATE $? "MySQL"
 else 
-    echo "MySQL is already installed $G skipping... $N"
+    echo -e "MySQL is already installed $G skipping... $N"
 fi
 
 dnf list installed nginx
@@ -44,7 +44,7 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y
     VALIDATE $? "NGINX"
 else 
-    echo "nginx is already installed $G skipping... $N"
+    echo -e "nginx is already installed $G skipping... $N"
 fi
 
 dnf list installed python3
@@ -52,6 +52,6 @@ if [ $? -ne 0 ]; then
     dnf install python3 -y
     VALIDATE $? "PYTHON3"
 else
-    echo "python3 is already installed $G skipping... $N"
+    echo -e "python3 is already installed $G skipping... $N"
 fi
 
