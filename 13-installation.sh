@@ -10,15 +10,28 @@ if [ $USERID -ne 0 ]; then
 
 fi
 
+VALIDATE(){
+
+    if [ $1 -eq 0 ]; then
+
+        echo " installation of $2 is successfull"
+
+    else
+
+        echo "Installation of $2 is unsuccssfull"
+
+    fi
+
+}
+
+
 dnf install mysql -y
 
-if [ $? -eq 0 ]; then
+VALIDATE $? "MySQL"
 
-    echo " installation of MySQL is successfull"
 
-else
+dnf install nginx -y
 
-    echo "Installation of MySQL is unsuccssfull"
+VALIDATE $? "NGINX"
 
-fi
 
