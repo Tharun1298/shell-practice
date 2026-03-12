@@ -19,7 +19,7 @@ if [ $? -eq 0 ]; then
 
 else
 
-    echo "Installation of MySQL is unsuccssfull;
+    echo "Installation of MySQL is unsuccssfull"
 
 fi
 
