@@ -15,3 +15,8 @@ else
     echo "Given number $NUMBER is greater than 10"
 
 fi
+
+#-ne
+#-lt
+#-gt
+#-eq
