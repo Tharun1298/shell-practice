@@ -34,4 +34,8 @@ dnf install nginx -y
 
 VALIDATE $? "NGINX"
 
+dnf install pythom3 -y
+
+VALIDATE $? "PYTHON3"
+
 
